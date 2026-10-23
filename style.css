@@ -28,7 +28,6 @@ main {
   border-radius: 8px 0 0 8px;
 }
 p {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
 }
@@ -63,7 +62,24 @@ span {
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-family: fraunces;
 }
 .text {
   color: hsl(228, 12%, 48%);
+  font-family: Montserrat;
+}
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 100%);
+    width: 80%;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .product {
+    width: 388px;
+    height: 388px;
+    border-radius: 8px 8px 0 0;
+  }
 }
